@@ -107,24 +107,22 @@
 
   원격 저장소(`remote repository`)는 `github`, `gitlab`, `bitbucket`등 다양한 서비스를 활용할 수 있다.
 
-  1. 원격저장소(`remote repository`) 설정
-
-     ```bash
-     $git remote add origin https://github.com_
+  1. ```bash
+gxxxxxxxxxx $git remote add origin https://github.com_bash
      ```
   
   * 로컬 저장소에 최초에 한번만 등록하면 된다.
-  * 원격 저장소(remote)를 `origin`이라는 이름으로 정해진 url을 `등록(add)`하는 것이다.
+  * 원격 저장소(remote)를 `origin`이라는 이름으로 정해진 url을 `등록(add)`하는 것이다.gc
   
   2. 원격 저장소로 `push`
   
-	   ```bash
+     ```bash
      $ git push origin master
-     ```
+	   ```
   
-	  * `origin`으로 설정된 원격 저장소에 `push` 한다.
+    * `origin`으로 설정된 원격 저장소에 `push` 한다.
   
-  3. 원격 저장소에서 `pull`
+	3. 원격 저장소에서 `pull`
   
   ```bash
   $ git pull origin master
@@ -142,4 +140,3 @@
   * init 과 비슷한 아이
   
   
-
