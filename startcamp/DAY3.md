@@ -319,7 +319,69 @@ Flask는 기본적으로 Template을 만들 때 `jinja2`라는 언어를 사용�
 
 ​	
 
+## Form Data
+
+HTML에서 사용자로부터 정보를 받기 위해서는 Form 태그를 활용한다.
+
+form 태그 기본구조
+
+```html
+<!-- templates/ping.html -->
+<form action = "/PONG">
+	<input type = "text" name = "say">
+    <input type = "submit" value = "전송">
+    <input type = "radio" name = "gender" value = "M"> 남자
+    <input type = "radio" name = "gender" value = "F"> 여자
+  
+</form>
+```
+
+
+
+* Form 태그는 `action`속성으로 해당 폼이 전송될 url을 지정해야 한다.
+* form 태그 안에는 `input`태그들을 정의하여, 사용자에게 받을 정보를 만든다.
+* `input`태그에는 어떤 종류의 입력을 받을지(`type`)을 정의하고 어떤 변수에 담아서 보낼지 정의한다.
+
+### Flask에서 사용자로부터 정보 받기
+
+1. 사용자가 입력할 수 있는 `Form`보여주기
+
+```python
+# app.py
+@app.route('/ping')
+def ping():
+    return render_template('ping.html')
+```
+
+~~~html
+<!-- templates/ping.html -->
+<form action = "/PONG">
+	<input type = "text" name = "say">
+    <input type = "submit" value = "전송">
+ 
+</form>
+~~~
 
 
 
 
+
+2. 정보입력해서 제출하기(사용자)
+
+~~~html
+# app.py
+from Flask import render_templates, flask, request
+@app.route('/pong')
+def pong():
+say = request.args.get('say')
+return render_templates('pong.html', say(이 아이가 pong.html에서의 변수) = say(이 아이가 app.py에서의 변수))
+~~~
+
+```html
+<!-- templates/pong.html -->
+<hi>{{say}}!!!</hi>
+```
+
+
+
+* `request.args`는 일종의 `dictionary`이고, `key`는 input에 정의한 `name`속성 값 이고 사용자가 입력한 값은 `value`이다.
