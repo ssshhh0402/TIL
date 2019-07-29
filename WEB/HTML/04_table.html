@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+  td {
+    border: 1px solid black;
+  }
+  </style>
+  <title>Table</title>
+</head>
+<body>
+  
+  <caption>대전 유성 연ㅇ수원 점심시간표</caption> <!-- 표의 제목-->
+  <thead>    <!-- Table Head!!!!-->
+  <table border = "1px solid black" summary="20주차 대전 점심 메뉴">
+    <tr>        <!-- TableRow-->      
+      <th> </th>    <!-- TableHead-->  <!-- TH는 자동으로 BOLD가 들어간다-->
+      <th>월</th>
+      <th>화</th>
+      <th>수</th>
+    </tr>
+  </thead>
+  <tbody>     <!-- Tbody!!!-->    
+    <tr>
+      <td >A 코스</td>         <!-- TD(TableData)-->
+      <td rowspan="2">짬뽕</td>
+      <td colspan="2">초밥 </td>
+    </tr>
+    <tr>
+      <td>B 코스</td>
+      <td>김치찌개</td>
+      <td colspan="2">삼계탕</td>
+    </tr>
+  </tbody>
+  <tfoot> 
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+  </tfoot>
+  </table>
+  <br>
+  <table>
+    <caption> 2019 타임 테이블</caption>
+    <thead>
+      <tr >
+        <th>TIME</th>
+        <th align="center">INDOOR</th>
+        <th colspan="2">OUTDOOR</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr >    
+        <td></td>
+        <td>소극장</td>
+        <td>잔디마당</td>
+        <td>대공연장</td>
+      </tr>
+    </thead>
+  
+      <tr>
+        <td>10:00</td>
+        <td rowspan="2">안녕하신가영</td>
+        <td></td>
+        <td>10cm</td>
+      </tr>
+   
+  
+      <tr>
+        <td>13:00</td>
+        <td rowspan="2">선우정아</td>
+        <td rowspan="2">참깨와 솜사탕</td>
+      </tr>
+    </thead>
+ 
+      <tr>
+        <td>15:00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>17:00</td>
+        <td>크러쉬</td>
+        <td></td>
+        <td>폴킴</td>
+      </tr>
+    </thead>
+    </table>
+  </body>
+  </html>

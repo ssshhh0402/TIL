@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Heading(제목) H1~H6-->
+  <h1>h1 문서의 제목</h1>
+  <h2>h2 문서의 제목</h2>
+  <h3>h3, 문서의 제목</h3>
+  <h4>h4, 문서의 제목</h4>
+  <h5>h5, 문서의 제목</h5>
+  <h6>h6, 문서의 제목</h6>
+  <h7>h7은 없습니다.</h7>
+  <!-- 문서의 단락(paragraph) -->
+  <p>p태그를 통하여 문서의 단락 구분</p>
+  p태그 적용 X
+  <!-- 3. br 태그-->
+  HTML에서는 태그가 작성되지 않은 상태에서 ENTER나 스페이스가 적용되지 않습니다.
+  <br>br 태그 = 엔터
+  <p>안녀하세요 <br> 만나서 반갑습니다. </p>
+  <!-- 4.텍스트 꾸미기 b태그 strong 코드 차이 알고있기-->
+  <p>안녕하세요!<b>볼드체입니다</b>
+      <strong>볼드체이지만, 시멘틱태그요</strong>
+  </p>
+  <!-- 5. 텍스트 꾸미기 (italic) -->
+  <p>
+    <i>기울임체(ㅇ이탤릭체)입니다.</i>
+    <em>이탤릭체지만, 시멘틱 태그요</em>                           <!--emphasis-->
+  </p>
+  <span>이건<mark>주목</mark>해주세요</span>
+  <p>이건 <del>취소</del>해주세요</p>
+  <p>이건<ins>추가</ins>해주세요</p>                             <!-- inwert-->
+  <p>하이! <sub>안녕하세요.</sub></p>
+  <p>하이! <sup>안녕하세요.</sup></p>
+  <p>x <sup>2</sup></p>
+  <!-- 8. pre-->
+  <pre>
+    import requests
+    for i in range(10):
+    print(i)
+  </pre>
+  <!-- 9. q(" ")-->
+  <p>
+    지수가 말했다. <q>쉬는 시간 언제인가요</q>
+  </p>
+  <!-- 10. 수평선-->
+  <hr>
+  <!-- 11.리스트-->
+  <!-- ol > li*3 >> li 3개를 가지고 있는 orderdlist 생성-->
+  <ol>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li> 
+  </ol>
+  <ul>                     <!-- ol = orderList > 정렬되어 있는 list
+                                ul = unorderlist > 정려되어 있지 않는 list-->
+    <li>a</li>
+    <li>c</li>
+    <li>b</li>
+  </ul>
+  <li>그냥 리스트</li>
+  <li>태그 사용</li>
+  <!-- 12. 이미지/비디오 -->
+  <!-- src 는 파일의 경로(Local 혹은 Web 노 상관)(왠만하면 할 것)
+       alt는 원본이 존재하지 않을 경우 보여주는 아이 (왠만하면 할 것) 웹페이지 리더는  src의 alt 내용을 읽는다(사족)
+       width, height는 사진의 크기 -->
+  <img src = "black.png" alt = "보노보노" width = "300px" height = "300px">
+  <!-- iframe : 외부사이트의 내용을 내 사이트에 추가 -->
+  <iframe width = "250" height = "150" src = "https://www.youtube.com/embed/O0AOTd-8MaA"></iframe>
+  <!-- 13. 링크 태그-->
+  <a href = "https://hphk.kr">해피해킹가기</a>
+</body>
+</html>
