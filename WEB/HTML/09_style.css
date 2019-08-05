@@ -1,0 +1,25 @@
+.header {
+  background-image: url('bs.jpg'); /* 내부에 있는 파일 뿐 아니라 외부 경로(url)가능
+  height: 300px;
+  /* 이미지 크기 -< 부족한 부분은 바둑한 형식 배치 
+  -> background-size: 300px 300px;
+     background-repeat: no-repeat;*/
+  
+     /*background-size: cover;는 기본적으로 이미지 크기 비율을 고정
+        width, height중 큰 값을 배경 이미지에 맞춤
+        따라서 보이지 않는 영역 발생 가능*/
+  background-size: cover;
+  background-position-y: 10%;
+    /*background-size: contain;
+      background-repeat: no-repeat
+    -> 배경이미지 크기의 비율을 고정
+    이미지가 보이지 않는 영역이 없도록 조정*/
+    /*background-position: center;
+    을 통하여 이미지가 중앙으로 오도록 조정 가능!*/
+
+    /* px로 조정 할 경우 width, height 순으로 지정
+      값  하나만 지정하면 width: 지정, height: auto
+      */
+
+  
+}
