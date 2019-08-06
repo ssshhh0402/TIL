@@ -50,7 +50,7 @@ rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/boo
 }
 ```
 
-* .mr-0
+* .mr(l)-0
 
 ```html
 .mr-0{
@@ -80,7 +80,7 @@ rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/boo
 
   * {0} : m(margin) | p(padding)
 
-  * {1} : b(bottom) | t(top) | r(right) | l(left) | x(left, right) | y(top, bottom)
+  * {1} : b(bottom) | t(top) | r(right) | l(left) | x(left & right) | y(top & bottom)
 
   * {2} : 0 (0, 0px)
 
@@ -119,7 +119,7 @@ background-color : primary
 ```
 
 ```html
-<div class=" bg-primary"></div>
+<div class="bg-primary"></div>
 ```
 
 ```html
