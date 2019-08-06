@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .contents{
+    height:100vh;
+    display: flex;
+    flex-direction:column;
+
+  }
+  footer{
+    margin-top: auto;
+    background-color: navy;
+    height: 100px;
+    width:100%;
+    color:white
+  }
+  nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 100px;
+    background-color: wheat;
+  }
+  .main{
+    display: flex;
+    height:100%;
+  }
+  aside{
+    width: 300px;
+    height: 100%;
+    background-color:rosybrown
+  }
+  section{
+    height: 100%;
+    background: pink;
+    flex-grow:1;
+  }
+  </style>
+</head>
+<body>
+  <div class="contents">
+  <nav>
+    <div class="logo">logo</div>
+    <div class="items">아이템</div>
+  </nav>
+  <div class="main">
+    <aside>왼쪽</aside>
+    <section>섹션</section>
+  </div>
+    <footer>
+      이 곳은 footer
+    </footer>
+  </div>
+</body>
+</html>

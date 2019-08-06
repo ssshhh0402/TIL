@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--
+    viewport는 웹 페이지가 보이는 영역을 지정하는 메타태그를 활용
+    
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=2.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /*orientation portrait/landscape
+                  세로모드 / 가로모드
+                  */
+  @media (orientation: portrait){
+    h1{
+      color: red;
+    }
+  }
+  @media(orientation: landscape){
+    h1{
+      color: blue;
+    }
+  }
+  /*web(너비가 768px보다 작을때*/
+  div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+  /*화면 너비에 따라 css 속성 정의*/
+  @media screen and (min-width: 768px){
+    /*1. web(너비가 768px보다 클 때)*/
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+  }
+  /*너비가 768px보다 클떄*/
+  span{
+    background:blue;
+  }
+  /*너비가 768px보다 작을 때*/
+  @media screen and (max-width: 768px){
+     span{ background: red
+  }
+  }
+
+
+
+
+
+</style>
+</head>
+<body>
+  <h1>안녕하세요</h1>
+  <div></div>
+  <span>gdgd</span>
+</body>
+</html>

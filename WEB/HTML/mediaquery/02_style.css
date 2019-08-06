@@ -1,0 +1,36 @@
+/* extra small
+  smartphone size!*/
+@media (min-width:576px){
+
+}
+
+
+
+/* small
+  */
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 768px){
+  /*
+  Galaxy tablet
+  */
+}
+
+@media (min-width: 992px){
+  /*
+  desktop
+  */
+}
+
+@media(min-width: 992px):
+/*\
+매우 큰 노트북*/
+/*print할 때만 아래의 설정값으로 하기
+  None 사용하여 화면에선 보이지만 출력할땐 안보이도록 구현하 떄 사용*/
+@media print{
+  h1{
+    color:pink;
+  }
+}

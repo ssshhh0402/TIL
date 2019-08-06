@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .container {
+    height:100vh;
+    width:100vw;
+    display:flex;
+    /*세로로 새워야하는데?*/
+    flex-direction:column;
+  }
+  nav {
+    height:100px;
+    align-items:center;
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background : red;
+  }
+  ol {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-right: 20px;
+    justify-content: space-around;
+  /*너도?*/
+  }
+  li{
+    margin: 10px;
+  }
+
+  .wrap {
+    height:100%;  
+    display: flex;
+  }
+
+  .left{
+    width: 100px;
+    height: 100%;
+    background-color: royalblue;
+  }
+
+  .right{
+    height: 100%;
+    flex-grow: 1;
+    display: flxe;
+    background-color:darkgreen;
+    flex-direction: column;
+  }
+
+  .contents{
+    background-color:darkmagenta;
+    border: 1px solid black;
+    color:white;
+    height:150px;
+    width:100%;
+  }
+
+  footer{
+    height: 50px;
+    width:100%;
+    position: fixed;
+    bottom:0;
+    background-color:darkturquoise;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a>로고입니다.</a>
+      <ol>
+        <li>main</li>
+        <li>contents1</li>
+        <li>contents2</li>
+        <li>about</li>
+      </ol>
+    </nav>
+    <div class="wrap">
+      <div class="left">왼쪽</div>
+      <div class="right">
+        <div class="contents">
+          abcdefghijklmnopqrstuvwxyz
+        </div>
+        <div class="contents">
+           ㄱㄴㄷㄻㅄㅇㅈㅊㅋㅌㅍㅎ
+        </div>
+        <div class="contents">
+            123456789
+        </div>
+      </div>
+    </div>
+    <footer>
+      footer라고 합니다
+    </footer>
+  </div>
+</body>
+</html>
